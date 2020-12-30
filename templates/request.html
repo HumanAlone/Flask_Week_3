@@ -38,7 +38,7 @@
                 {{ form.client_name(class_='form-control') }}
                 {{ form.client_phone.label("Ваш телефон", class_='mb-1 mt-2') }}
                 {{ form.client_phone(class_='form-control') }}
-                {{ form.csrf_token }}
+                {{ form.hidden_tag() }}
                 <input type="submit" class="btn btn-primary mt-4 mb-2" value="Найдите мне преподавателя">
             </div>
         </form>

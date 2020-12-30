@@ -13,7 +13,7 @@
                     <form class="float-right d-inline-block" method="post">
                         <div class="form-inline">
                             {{ form.sorting(class_="custom-select my-1 mr-2") }}
-                            {{ form.csrf_token }}
+                            {{ form.hidden_tag() }}
                             <button type="submit" class="btn btn-primary my-1">Сортировать</button>
                         </div>
                     </form>
