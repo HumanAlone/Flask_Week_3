@@ -12,6 +12,7 @@ from json_service import make_a_database
 
 app = Flask(__name__)
 csrf = CSRFProtect(app)
+csrf.init_app(app)
 SECRET_KEY = urandom(42)
 app.config['SECRET_KEY'] = SECRET_KEY
 make_a_database()  # Make a json file teachers.json
