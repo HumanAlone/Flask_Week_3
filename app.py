@@ -193,4 +193,5 @@ def server_error(error):
     return f'<center><h1>Вы сломали сервер! Ошибка {error}</h1></center>'
 
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run()
