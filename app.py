@@ -79,6 +79,7 @@ def sort_teachers(unsorted_teachers, option):
 
 
 @app.route("/")
+@app.route('/index')
 def index():
     if teachers is None:
         return server_error(500)
