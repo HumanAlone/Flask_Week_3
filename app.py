@@ -13,7 +13,8 @@ from json_service import make_a_database
 app = Flask(__name__)
 csrf = CSRFProtect(app)
 csrf.init_app(app)
-SECRET_KEY = urandom(42)
+SECRET_KEY = r'0\'\xc7^\x00\x9dD\x1d\x96\xfc\xc4"\xe6\x1a\x11\x920\x11\xa2ks\x80\xf8\xa7f(' \
+             r'\x17\x9f\xda\xe8g.\r<ie\xd5\x13\x98\xa4\xe1o '
 app.config['SECRET_KEY'] = SECRET_KEY
 make_a_database()  # Make a json file teachers.json
 days_of_week = OrderedDict({"mon": "Понедельник", "tue": "Вторник", "wed": "Среда", "thu": "Четверг",
